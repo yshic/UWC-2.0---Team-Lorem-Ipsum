@@ -1,0 +1,119 @@
+* {
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+.container {
+height: 100%;
+width: 100%;
+}
+
+.signin {
+background-color: #02a24a;
+width: 100%;
+height: 10%;
+color: white;
+}
+
+.avatar {
+padding-left: 30px;
+}
+
+.avatar img {
+width:56px;
+height: 56px;
+border-radius: 50%;
+}
+
+.choice {
+width: 100%;
+height: 90%;
+background-color: white;
+display: flex; /* Add this to use flexbox */
+}
+
+.option {
+/* Remove float and set width to 20% */
+width: 20%;
+height: 100%;
+border-right: 1px solid black;
+display: flex; /* Add this to use flexbox */
+flex-direction: column; /* Add this to stack suboptions vertically */
+}
+
+.suboption {
+background-color: white;
+width: 100%;
+height: 14.28%; /*number ò sub option í 5 so 100/5 í 20*/
+display: flex;
+align-items: center;
+justify-content: center; /* Add this to center content horizontally and vertically */
+text-align: center; /* Center text within suboption */
+margin: 5px 0; /* Add some margin between suboptions */
+}
+
+.suboption a {
+font-size: 20px;
+color: black;
+text-decoration: unset;
+margin: 0px;
+}
+
+.form {
+width: 80%;
+height: 100%;
+}
+
+.form form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}
+
+.form label {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.form input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.form button:hover {
+    background-color: #0062cc;
+}
+
+.form h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+}
