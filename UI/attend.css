@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.signin {
+  background-color: #02a24a;
+  width: 100%;
+  height: 10%;
+  color: white;
+}
+
+.avatar {
+  padding-left: 30px;
+}
+
+.avatar img {
+  width:56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.choice {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  display: flex; /* Add this to use flexbox */
+}
+
+.option {
+  /* Remove float and set width to 20% */
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid black;
+  display: flex; /* Add this to use flexbox */
+  flex-direction: column; /* Add this to stack suboptions vertically */
+}
+
+.suboption {
+  background-color: white;
+  width: 100%;
+  height: 20%; /* Increase height to 20% to make suboptions taller */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this to center content horizontally and vertically */
+  text-align: center; /* Center text within suboption */
+  margin: 5px 0; /* Add some margin between suboptions */
+}
+
+.suboption a {
+  font-size: 20px;
+  color: black;
+  text-decoration: unset;
+  margin: 0px;
+}
+
+.notification {
+  /* Remove float and set width to 80% */
+  width: 80%;
+  height: 100%;
+  background-color: #d7d5d5;
+  display: flex; /* Add this to use flexbox */
+  flex-direction: column; /* Add this to stack image and noteboxes vertically */
+}
+
+.notification .row {
+  /* Add flex-grow to fill available space */
+  width: 100%;
+  height: 30%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row; /* Change to row to display images horizontally */
+}
+
+.notification .column {
+  /* Set width to 33.33% to display 3 images horizontally */
+  width: 33.33%;
+  height: 100%;
+}
+
+.notification .column img {
+  /* Add max-height to prevent images from overflowing */
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Add this to resize images to fill available space */
+}
+form{
+   margin-top: 66px;
+  margin-left: 66px;
+}
+label {
+  font-size: 20px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input[type=button]{
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.box {
+  background-color: white;
+  width: 100%;
+  display: flex; /* Add this to use flexbox */
+  flex-direction: row; /* Change to row to display content and deadline side by side */
+  align-items: center;
+  justify-content: space-between; /* Add this to evenly space content and deadline */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box p {
+  font-size: 20px;
+  margin: 0;
+}
+
+#colname {
+  background-color: #c4c4c4;
+  font-weight: bold;
+}
