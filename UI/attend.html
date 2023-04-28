@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="job.css">
+  <link rel="stylesheet" href="attend.css">
   <title>UWC 2.0</title>
   <script src="https://kit.fontawesome.com/267f43a12c.js" crossorigin="anonymous"></script>
 </head>
@@ -26,6 +26,7 @@
             Trang chủ
           </a>
         </div>
+        
         <div class="suboption" id="messbox">
           <a href="mess.html">
             <i class="fas fa-envelope"></i>
@@ -65,28 +66,21 @@
           </a>
         </div>
       </div>
-
-      <div class="form">
-        <h1>Nhập thông tin người cần giao việc</h1>
-	<form>
-		<label for="name">Tên:</label>
-		<input type="text" id="name" name="name" required>
-
-		<label for="dob">Mã nhân viên:</label>
-		<input type="text" id="dob" name="dob" required>
-
-		<label for="city">Công việc giao:</label>
-		<input type="text" id="city" name="city" required>
-
-		<label for="phone">Hạn cuối</label>
-		<input type="text" id="phone" name="phone" required>
-
-		<button type="submit">Submit</button>
-	</form>
-      </div>
+      <form>
+        <div>
+          <label>Họ và tên</label><br>
+          <input type ="text"/><br><br>
+        </div>
+        <div>
+          <label>Mã nhân viên</label><br>
+          <input type ="text"/><br><br>
+        </div>
+        <div>
+          <input type="button" value="nộp">
+        </div>
+      </form>
+    
       
-    </div>
-  </div>
 </body>
 
 </html>
